@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+   var createCounter = function(init) {
+    let num=init;
+
+    return {
+        increment: ()=>{
+            num++;
+            return num
+        },
+        decrement: ()=>{
+           num--;
+           return num
+        }
+    }    
+};
+ 
+    // console.log(counter.increment);
+    const counter = createCounter(5);
+    console.log(counter.increment());
+    console.log(counter.decrement());
+    console.log(typeof(counter.increment));
+    
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+var a = 10;
+var b = 20;
+var product = a * b;
+var cal;
+
+switch (product) {
+    case 200: // a*b = 200
+        cal = a + b; // Addition
+        break;
+    case 0: // a*b = 0
+        cal = a - b; // Subtraction
+        break;
+    // Add more cases for other arithmetic expressions as needed
+    default:
+        cal = "Result not defined for this product.";
+        break;
+}
+
+document.write(cal);
+
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // class Employee{
+    //     constructor(){
+    //        this.id=101;
+    //        this.name='john';
+    //     }
+    // }
+    // var emp=new Employee();
+    // document.write(emp.id+" "+emp.name);
+    class companyName{
+        constructor(){
+            let id=201;
+            this.comapany='javatpoint'
+        }
+    }
+    class Employee extends companyName{
+        constructor(id,name){
+           super();
+           this.id=id;
+           this.name=name;
+        }
+    }
+    var emp=new Employee(101,'john');
+    document.write(emp.id+" "+emp.name+" "+emp.comapany+""+companyName.id); 
+</script>
+</html>

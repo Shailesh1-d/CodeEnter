@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // function Employee(firstName,lastName){
+    //     this.firstName=firstName;
+    //     this.lastName=lastName;
+    // }
+    // Employee.prototype.fullName=function(){
+    //     return `${this.firstName} ${this.lastName}`;
+    // }
+    //     var employee1=new Employee('martin','john');
+    //     console.log(employee1);
+    //     document.write(employee1.fullName());
+
+    function Employee(firstName,lastName){
+        this.firstName=firstName;
+        this.lastName=lastName;
+    }
+    function fullName(){
+        return`${this.firstName} ${this.lastName}`;
+    }
+    var emp=new Employee('john','martin');
+    console.log(emp.fullName());
+</script>
+</html>

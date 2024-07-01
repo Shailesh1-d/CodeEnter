@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const object1={};
+    Object.defineProperties(object1,{property1:{value:45,value:50}});
+    console.log(object1.property1);
+    const object2={
+
+    };
+    Object.defineProperty(object2,'property1',{value:{name:'john',value:45},enumerable:true});
+    console.log(object2.property1);
+    console.log(Object.values(object2));
+</script>
+</html>
